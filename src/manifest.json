@@ -1,0 +1,11 @@
+{
+	"manifest_version": 3,
+	"name": "Tiny Notes",
+	"version": "0.0.0",
+	"description": "A tiny notes app",
+	"permissions": ["storage"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Tiny Notes"
+	}
+}

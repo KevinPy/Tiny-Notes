@@ -1,0 +1,29 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      overtype:
+        specifier: ^1.2.3
+        version: 1.2.3
+
+packages:
+
+  markdown-actions@1.1.2:
+    resolution: {integrity: sha512-U7rmgTvUP3neh3XaVblikslRWWhfpzF2SiI1A6z3az7IpYuAiVvdqtZrFCArV22TSj2Ht+r0ResohlsJ8/ntbw==}
+
+  overtype@1.2.3:
+    resolution: {integrity: sha512-RREpVMbngYg1NtBKZqy2QhVBvLxI/RdS8hzm6LOZrQwrTtKJW3WwZraNepxbEoQEbeC4k2KpAhVaPS81+dVC4Q==}
+
+snapshots:
+
+  markdown-actions@1.1.2: {}
+
+  overtype@1.2.3:
+    dependencies:
+      markdown-actions: 1.1.2

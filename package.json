@@ -1,11 +1,11 @@
 {
   "name": "tiny-notes",
-  "version": "0.0.0",
-	"description": "A tiny notes app",
-  "main": "index.js",
-  "scripts": {
-    "build": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny app in a popup for write quickly your notes.",
   "author": "Kevin Py",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -r src/* dist/"
+  }
 }

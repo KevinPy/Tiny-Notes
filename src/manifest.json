@@ -1,11 +1,18 @@
 {
-	"manifest_version": 3,
-	"name": "Tiny Notes",
-	"version": "0.0.0",
-	"description": "A tiny notes app",
-	"permissions": ["storage"],
-	"action": {
-		"default_popup": "popup.html",
-		"default_title": "Tiny Notes"
-	}
+  "manifest_version": 3,
+  "name": "Tiny Notes",
+  "version": "1.0.0",
+  "description": "A tiny app in a popup for write quickly your notes.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tiny Notes",
+    "default_icon": {
+      "128": "assets/images/icon-128.png"
+    }
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "assets/images/icon-128.png"
+  }
 }

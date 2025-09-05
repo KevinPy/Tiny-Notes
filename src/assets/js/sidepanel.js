@@ -3,8 +3,6 @@ const storage = chrome.storage.sync || chrome.storage.local;
 const STORAGE_KEY = "tiny-notes-key";
 const DEFAULT_SETTINGS = {
   theme: "light",
-  width: 600,
-  height: 400,
   toolbar: true,
   showStats: true,
 };
@@ -30,25 +28,14 @@ const saveContent = (content) => {
 };
 
 const initializeEditor = async () => {
-  const result = await storage.get([
-    "theme",
-    "width",
-    "height",
-    "toolbar",
-    "showStats",
-  ]);
+  const result = await storage.get(["theme", "toolbar", "showStats"]);
   const theme = result.theme || DEFAULT_SETTINGS.theme;
-  const width = result.width || DEFAULT_SETTINGS.width;
-  const height = result.height || DEFAULT_SETTINGS.height;
   const toolbar =
     result.toolbar !== undefined ? result.toolbar : DEFAULT_SETTINGS.toolbar;
   const showStats =
     result.showStats !== undefined
       ? result.showStats
       : DEFAULT_SETTINGS.showStats;
-
-  document.body.style.width = `${width}px`;
-  document.body.style.height = `${height}px`;
 
   const [editor] = new OT("#editor", {
     theme,
